@@ -7,12 +7,12 @@ import { usePathname } from 'next/navigation'
 const navLinks = [
   { href: "/", svgIcon: "home" },
   { href: "/About", svgIcon: "user"},
-  { href: "/project", svgIcon: "project"},
+  { href: "/MyProject", svgIcon: "project"},
   { href: "/stack", svgIcon: "stack"},
   { href: "/mail", svgIcon: "mail"},
 ]
 
-const Navbar = () => {
+const Sidebar = () => {
 
   return (
     <nav className='flex flex-col fixed bg-gray-800 aligh-center'>
@@ -31,4 +31,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Sidebar

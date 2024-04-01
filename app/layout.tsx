@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Bgwrap from "@/components/bgwrap";
-import Navbar from "@/components/Navbar";
+import Bgwrap from "@/components/Bgwrap";
+import Sidebar from "@/components/Sidebar";
+import Upbar from "@/components/Upbar";
 
 
 const inter = Inter({ subsets: ["cyrillic"] });
@@ -21,7 +22,8 @@ export default function RootLayout({
     <html lang="Ru">
       <body className={inter.className}>
         <Bgwrap />
-        <Navbar />
+        <Upbar />
+        <Sidebar />
         {children}
         </body>
     </html>
