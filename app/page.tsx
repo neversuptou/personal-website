@@ -6,6 +6,7 @@ import Upbar from "@/components/Upbar";
 
 
 export default function Home() {
+  const slash = "</>"
   return (
     <main>
       <div className="max-container flex flex-row">
