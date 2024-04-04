@@ -4,7 +4,7 @@ import SvgHome from './home'
 import SvgProject from './project'
 import SvgMail from './mail'
 import SvgUser from './user'
-import SvgStack from './stack'
+import SvgNull from './null'
 import classNames, { type Argument } from "classnames";
 
 const Icon = (props:{title:string, href:string,className: Argument}) => {
@@ -24,9 +24,9 @@ const Icon = (props:{title:string, href:string,className: Argument}) => {
       <Link href={props.href} className={classNames('svgh m-auto', props.className)}><SvgProject width="30" height="30" viewBox="0 0 50 50" /></Link>
     )
   }
-  if(props.title == "stack"){
+  if(props.title == "null"){
     return (
-      <Link href={props.href} className={classNames('svgh m-auto', props.className)}><SvgStack width="30" height="30" viewBox="0 0 50 50" /></Link>
+      <Link href={props.href} className={classNames('svgh m-auto', props.className)}><SvgNull width="30" height="30" viewBox="0 0 50 50" /></Link>
     )
     
   }

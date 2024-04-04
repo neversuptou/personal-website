@@ -8,7 +8,7 @@ const navLinks = [
   { href: "/", svgIcon: "home" },
   { href: "/About", svgIcon: "user"},
   { href: "/MyProject", svgIcon: "project"},
-  { href: "/stack", svgIcon: "stack"},
+  { href: "/nulls", svgIcon: "null"},
   { href: "/mail", svgIcon: "mail"},
 ]
 

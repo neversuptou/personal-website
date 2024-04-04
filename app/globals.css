@@ -174,7 +174,9 @@ nav {
 nav li {
   @apply my-8
 }
-
+.svg *{
+  background-size: 200% 100%;
+}
 .svgh *:hover {
   fill: url(#header-shape-gradient) #fff;
 }
@@ -210,20 +212,31 @@ nav li {
   font-size: 32px;
   font-weight: 700;
 }
+.tabs:hover{
+  color: transparent;
+  background: linear-gradient(45deg, #4d57d0, #b452c3, #e49294, #fdc773);
+  background-clip: text;
+}
 
 .active-tabs {
   font-weight: 700;
+  color: transparent;
+  background: linear-gradient(45deg, #4d57d0, #b452c3, #e49294, #fdc773);
+  background-clip: text;
 }
+
 
 .content {
   border: 1px solid transparent;
+  border-color: white;
+
   border-radius: 5px;
-  background: linear-gradient(45deg, #4d57d0, #b452c3, #e49294, #fdc773) border-box;
+  /* background: linear-gradient(45deg, #4d57d0, #b452c3, #e49294, #fdc773);
   -webkit-mask:
     linear-gradient(#ffffff 0 0) padding-box,
     linear-gradient(#ffffff00 0 0);
   -webkit-mask-composite: xor;
-  mask-composite: exclude;
+  mask-composite: exclude; */
   display: none;
   width: 100%;
   justify-content: start;
@@ -233,6 +246,7 @@ nav li {
 
 .content h2 {
   padding: 10px;
+
 }
 
 .active-content {
@@ -248,4 +262,26 @@ nav li {
 
 .fif-img {
   left: -300px;
+}
+
+/* Projects */
+.project-image{
+  box-shadow: 0px 0px 30px #ffffff;
+  border-radius: 20px;
+}
+.project-image:hover{
+  opacity: 0.9;
+}
+
+
+.active-circle *{
+fill: #7f55ca;
+display: unset;
+}
+.circle *{
+fill: #5857cf;
+display: unset;
+}
+.hide{
+  display: none;
 }
