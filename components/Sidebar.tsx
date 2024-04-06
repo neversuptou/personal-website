@@ -1,15 +1,16 @@
 "use client"
 import React from 'react'
 import Icon from './icons/Icon'
-import { useRouter } from 'next/router'
 import { usePathname } from 'next/navigation'
+import type {IconProps} from './icons/Icon';
 
-const navLinks = [
-  { href: "/", svgIcon: "home" },
-  { href: "/About", svgIcon: "user"},
-  { href: "/MyProject", svgIcon: "project"},
-  { href: "/Nulls", svgIcon: "null"},
-  { href: "/Contacts", svgIcon: "mail"},
+
+const navLinks:IconProps[] = [
+  { href: "/", title: "home" },
+  { href: "/About", title: "user"},
+  { href: "/MyProject", title: "project"},
+  { href: "/Nulls", title: "null"},
+  { href: "/Contacts", title: "mail"},
 ]
 
 const Sidebar = () => {
@@ -17,13 +18,11 @@ const Sidebar = () => {
   return (
     <nav className='flex flex-col fixed bg-gray-800 aligh-center'>
       {navLinks.map((link) => {
-        // eslint-disable-next-line react-hooks/rules-of-hooks
         const asPath = usePathname()
         const path = `${asPath}`.split('?')[0]
-        const isActive = path
         let isCurrent = (path==link.href)
         return (
-          <Icon href={link.href} key={link.svgIcon} title={link.svgIcon} className={isCurrent ? `active` : undefined}/>
+          <Icon {...link} className={isCurrent ? `active` : undefined}/>
         )
       }
       )}
