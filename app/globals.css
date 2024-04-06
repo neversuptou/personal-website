@@ -243,14 +243,14 @@ nav li {
   align-items: start;
   z-index: 1;
 }
-
 .content h2 {
   padding: 10px;
-
 }
-
 .active-content {
   display: flex;
+}
+.fif-img {
+  left: -300px;
 }
 
 /* TEXT GRADIENT */
@@ -260,9 +260,7 @@ nav li {
   color: transparent;
 }
 
-.fif-img {
-  left: -300px;
-}
+
 
 /* Projects */
 .project-image{
@@ -273,6 +271,7 @@ nav li {
   opacity: 0.9;
 }
 
+/* Активные табы */
 
 .active-circle *{
 fill: #7f55ca;
@@ -282,6 +281,4 @@ display: unset;
 fill: #5857cf;
 display: unset;
 }
-.hide{
-  display: none;
-}
+

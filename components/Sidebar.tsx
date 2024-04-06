@@ -8,8 +8,8 @@ const navLinks = [
   { href: "/", svgIcon: "home" },
   { href: "/About", svgIcon: "user"},
   { href: "/MyProject", svgIcon: "project"},
-  { href: "/nulls", svgIcon: "null"},
-  { href: "/mail", svgIcon: "mail"},
+  { href: "/Nulls", svgIcon: "null"},
+  { href: "/Contacts", svgIcon: "mail"},
 ]
 
 const Sidebar = () => {
