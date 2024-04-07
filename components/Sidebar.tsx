@@ -16,7 +16,7 @@ const navLinks:IconProps[] = [
 const Sidebar = () => {
 
   return (
-    <nav className='flex flex-col fixed bg-gray-800 aligh-center'>
+    <nav className=''>
       {navLinks.map((link) => {
         const asPath = usePathname()
         const path = `${asPath}`.split('?')[0]

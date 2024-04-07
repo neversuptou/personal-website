@@ -52,7 +52,7 @@ const Contacts = () => {
   };
   return (
     <div className='w-full h-full max-container'>
-      <div className='flex flex-row justify-center '>
+      <div className='flex flex-row max-lg:flex-col justify-center max-lg:items-center'>
         <div className='col-4 flex flex-col justify-center items-center mt-[63px] '>
           <div className="contact-square">
             <SvgMail width={50} height={50} />
@@ -85,23 +85,23 @@ const Contacts = () => {
             </Link>
           </div>
         </div>
-        <div className='col-8 flex flex-col justify-center items-center h-[100%] ml-[80px]'>
+        <div className='col-8 flex flex-col justify-center items-center h-[100%] lg:ml-[80px]'>
           <h1 className="bold-52">Contact <span className="text-gradient">me</span></h1>
           <div className="flex flex-col w-[100%]">
             <form className="form flex flex-col" onSubmit={handleSubmit}>
               <div>
-                <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Ваше Имя" className="w-[100%] h-[50px] regular-18 rounded-[10px] bg-gray-800 mb-4 p-8"></input>
+                <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Ваше Имя" className="w-[100%] h-[50px] regular-18 rounded-[10px] bg-gray-800 my-8 p-8"></input>
                 {errors.name && <p className="text-red-500">{errors.name}</p>}
               </div>
               <div>
-                <input type="text" name="email" value={formData.email} onChange={handleChange} placeholder="Ваша почта" className="w-[100%] h-[50px] regular-18 rounded-[10px] bg-gray-800 my-4 p-8"></input>
+                <input type="text" name="email" value={formData.email} onChange={handleChange} placeholder="Ваша почта" className="w-[100%] h-[50px] regular-18 rounded-[10px] bg-gray-800 my-8 p-8"></input>
                 {errors.email && <p className="text-red-500">{errors.email}</p>}
               </div>
               <div>
-                <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Ваше сообщение" className="w-[100%] h-[200px] regular-18 rounded-[10px] bg-gray-800 my-4 p-8 resize-none"></textarea>
+                <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Ваше сообщение" className="w-[100%] h-[200px] regular-18 rounded-[10px] bg-gray-800 my-8 p-8 resize-none"></textarea>
                 {errors.message && <p className="text-red-500">{errors.message}</p>}
               </div>
-              <button type="submit" className="gradient-border py-4 px-8 rounded-[10px] my-4 align-middle">
+              <button type="submit" className="gradient-border py-4 px-8 rounded-[10px] my-8 align-middle">
                 Отправить сообщение
               </button>
             </form>
@@ -111,7 +111,7 @@ const Contacts = () => {
               © 2024 neversuptou
             </p>
             /
-            <p className="regular-18  mx-4">
+            <p className="regular-18 mx-4">
               All rights reserved
             </p>
           </div>
