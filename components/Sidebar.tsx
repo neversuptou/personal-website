@@ -22,7 +22,7 @@ const Sidebar = () => {
         const path = `${asPath}`.split('?')[0]
         let isCurrent = (path==link.href)
         return (
-          <Icon {...link} className={isCurrent ? `active` : undefined}/>
+          <Icon {...link} key ={link.title} className={isCurrent ? `active` : undefined}/>
         )
       }
       )}
