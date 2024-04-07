@@ -134,6 +134,9 @@ body {
   .bold-16 {
     @apply text-[16px] font-[700];
   }
+  .contact-square{
+    @apply w-[90%] h-[200px] flex flex-col justify-center items-center bg-gray-800 regular-18 rounded-[10px]
+  }
 }
 
 /* BACKGROUND */

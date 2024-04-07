@@ -5,6 +5,7 @@ const SvgHome = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     {...props}
+    viewBox="0 0 50 50"
   >
     <defs>
     <linearGradient id="header-shape-gradient" x2="0.35" y2="1">

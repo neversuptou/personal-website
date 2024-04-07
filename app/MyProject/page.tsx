@@ -29,7 +29,7 @@ const page = () => {
             </div>
           </div>
           <div className="col-6 flex flex-col ml-10 h-[100%]">
-            <h2 className="bold-52 w-[100%] text-gradient flexStart">{project.project_h}</h2>
+            <h2 className="bold-52 w-[100%] flexStart">Проект:<span className="text-gradient mx-2">{project.project_h}</span></h2>
             <p className="regular-20 pt-5">{project.description}</p>
             <p className="stack bold-20 pt-10 pb-2 text-gradient">TECHNOLOGIES</p>
             <p className="regular-20 ">{project.stack}</p>

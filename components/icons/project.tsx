@@ -6,6 +6,7 @@ const SvgProject = (props: SVGProps<SVGSVGElement>) => (
     width={50}
     height={50}
     fill="none"
+    viewBox="0 0 50 50"
     {...props}
   >
     <g clipPath="url(#a)">

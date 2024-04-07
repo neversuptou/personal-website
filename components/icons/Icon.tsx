@@ -9,7 +9,7 @@ import SvgNull from './null';
 export interface IconProps {
     title: string,
     href: string,
-    className?: Argument
+    className?: Argument,
 }
 
 const IconComponents = {
@@ -29,7 +29,7 @@ const IconComponents = {
   
     return (
       <Link href={href} className={classNames('svgh m-auto', className)}>
-        <SvgComponent width="30" height="30" viewBox="0 0 50 50" />
+        <SvgComponent width="30" height="30"  />
       </Link>
     );
   };
