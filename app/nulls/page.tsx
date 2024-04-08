@@ -15,7 +15,7 @@ const nulls = () => {
     const [currentIndex, setCurrentIndex] = useState(1);
     return (
         <div className='flex flex-col max-container h-[70vh]'>
-            <h2 className='bold-52 w-[100%] text-center'>Что говорят <span className='text-gradient bold-52'>клиенты</span></h2>
+            <h2 className='bold-32 md:bold-52 w-[100%] text-center'>Что говорят <span className='text-gradient bold-32 md:bold-52'>клиенты</span></h2>
             {data?.map((otziv, index) => (
         otziv.id == currentIndex &&
         <div className= "flex flex-col justify-center align-center flexCenter h-[70vh]" key={index}>
@@ -30,8 +30,8 @@ const nulls = () => {
             <Image className="rounded-full" src={otziv.author_image} alt="Project-Image" width={200} height={200} />
             </div>
           <div className="col-6 justify-center align-center ml-10 h-[100%]">
-            <h2 className="bold-52 w-[100%] text-gradient flexStart">{otziv.author_name}</h2>
-            <p className="regular-20 pt-5">{otziv.description}</p>
+            <h2 className="bold-26 md:bold-32 w-[100%] text-gradient flexStart">{otziv.author_name}</h2>
+            <p className="regular-14 md:regular-20 pt-5">{otziv.description}</p>
             </div>              
               <button className={`px-2`}
                 onClick={() => {

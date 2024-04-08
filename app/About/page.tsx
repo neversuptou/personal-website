@@ -5,7 +5,7 @@ const page = () => {
   return (
     <div>
       <Image src={"/photo-me.png"} alt='me' width={566} height={200} className="max-lg:hidden fif-img mt-[-50px] absolute" />
-      <div className="max-container flex flex-row max-lg:flex-col lg:flexCenter h-[73vh]">
+      <div className="max-container max-lg:mx-[50px] flex flex-row max-lg:flex-col lg:flexCenter h-[73vh]">
         <div className="lg:col-8 max-lg:mt-[100px]">
           <h2 className="bold-32 md:bold-52 ">Немного<span className="text-gradient bold-32 md:bold-52"> обо мне</span></h2>
           <p className="py-12 regular-18">После окончания школы, очень хотелось окунуться в нору программирования и веб-разработки.<br />
@@ -14,8 +14,8 @@ const page = () => {
             Мне очень нравится работа с кодом поэтому я успел за свое самообучение попробовать много разного.
           </p>
         </div>
-        <div className="lg:col-4 height-[100%] mt-[]">
-          <div className="h-[300px]">
+        <div className="lg:col-4 height-[100%]">
+          <div className="h-[300px] max-lg:mb-[100px]">
           <TabsAbout />
           </div>
           

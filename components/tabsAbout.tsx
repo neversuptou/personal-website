@@ -10,7 +10,7 @@ const TabsAbout = () => {
     return (
         <div>
             <ul className="tab-list flex flex-col">
-                <li className={`tabs ${getActiveClass(1, "active-tabs")}`} onClick={() => { toggleTab(1) }}>Soft skills</li>
+                <li className={`tabs ${getActiveClass(1, "active-tabs")} bold-26 md:bold-32`} onClick={() => { toggleTab(1) }}>Soft skills</li>
                 <li>
                     <div className={`content ${getActiveClass(1, "active-content")}`}>
                         <h2>
@@ -18,7 +18,7 @@ const TabsAbout = () => {
                         </h2>
                     </div>
                 </li>
-                <li className={`tabs ${getActiveClass(2, "active-tabs")}`} onClick={() => { toggleTab(2) }}>Доп умения</li>
+                <li className={`tabs ${getActiveClass(2, "active-tabs bold-26 md:bold-32")}bold-26 md:bold-32`} onClick={() => { toggleTab(2) }}>Доп умения</li>
                 <li>
                     <div className={`content ${getActiveClass(2, "active-content")}`}>
                         <h2>
@@ -26,7 +26,7 @@ const TabsAbout = () => {
                         </h2>
                     </div>
                 </li>
-                <li className={`tabs ${getActiveClass(3, "active-tabs")}`} onClick={() => { toggleTab(3) }}>Цели</li>
+                <li className={`tabs ${getActiveClass(3, "active-tabs bold-26 md:bold-32")}bold-26 md:bold-32`} onClick={() => { toggleTab(3) }}>Цели</li>
                 <li>
                     <div className={`content ${getActiveClass(3, "active-content")}`}>
                         <h2>

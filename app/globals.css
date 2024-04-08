@@ -122,7 +122,9 @@ body {
   .bold-32 {
     @apply text-[32px] font-[700] leading-[120%];
   }
-
+  .bold-26 {
+    @apply text-[26px] font-[700] leading-[120%];
+  }
   .bold-20 {
     @apply text-[20px] font-[700];
   }
@@ -165,6 +167,7 @@ body {
     border-radius: 10px;
     
   }
+  
 }
 @media (min-width: 1024px) {
   nav {
@@ -249,8 +252,6 @@ nav li {
   align-items: start;
   position: relative;
   cursor: pointer;
-  font-size: 32px;
-  font-weight: 700;
 }
 .tabs:hover{
   color: transparent;

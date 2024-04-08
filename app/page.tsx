@@ -7,7 +7,7 @@ export default function Home() {
   const slash = "</>"
   return (
     <main className="height-[100vh]">
-      <div className="max-container flex flex-row">
+      <div className="max-container max-lg:mx-[50px] flex flex-row">
         <div className="lg:col-6 flexCenter align-center justify-center max-lg:mt-[150px]">
           <div className="backh flex-col ">
             <h2 className="bold-32 md:bold-52 w-[100%] ">frontend<span className="bold-30 md:bold-52 text-gradient"> developer {slash}</span></h2>
