@@ -9,7 +9,7 @@ const navLinks:IconProps[] = [
   { href: "/", title: "home" },
   { href: "/About", title: "user"},
   { href: "/MyProject", title: "project"},
-  { href: "/Nulls", title: "null"},
+  { href: "/Otziv", title: "null"},
   { href: "/Contacts", title: "mail"},
 ]
 
