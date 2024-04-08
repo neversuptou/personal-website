@@ -1,7 +1,6 @@
 "use client"
 import SvgCircle from '@/components/icons/circle';
 import React, { useState } from 'react'
-import Link from 'next/link';
 import Image from 'next/image';
 // Nulls Data
 import data from "@/data/nulls.js";
