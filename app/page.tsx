@@ -14,7 +14,7 @@ export default function Home() {
             <p className="py-12 mb-1 regular-18"> Меня зовут Данила, мне 23, и я разработчик с фокусом на frontend.
               Я постоянно стремлюсь к саморазвитию и следую передовым тенденциям в мире разработки.
               Я готов взяться за новые вызовы и принести свой вклад в проекты, а пока вы можете посмотреть, то что я уже сделал.</p> 
-            <button className="gradient-border py-4 px-8 "><Link href={"/MyProject"}>Мои проекты</Link></button>
+              <Link href={"/MyProject"}><button className="gradient-border py-4 px-8 ">Мои проекты</button></Link>
           </div>
         </div>
         <div className="max-lg:hidden col-6 flex-col flexCenter">
